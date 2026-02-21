@@ -1,7 +1,7 @@
 services:
   s3app:
     image: prawee/strapi
-    container_name: 68-s3-app
+    container_name: 68-s3-4G1B-app
     environment:
       DATABASE_CLIENT: postgres
       DATABASE_NAME: "${DATABASE_NAME}"

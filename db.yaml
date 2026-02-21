@@ -1,7 +1,7 @@
 services:
   s3db:
     image: postgres:latest
-    container_name: 68-s3-database
+    container_name: 68-s3-4G1B-database
     environment:
       POSTGRES_USER: "${DATABASE_USER}"
       POSTGRES_PASSWORD: "${DATABASE_PASS}"
