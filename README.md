@@ -50,8 +50,10 @@ docker compose -f admin.yaml up -d #background
 docker compose -f app.yaml up # monitoring
 docker compose -f app.yaml up -d #background
 ```
+
 ### Run All
 
 ```sh
 docker compose -f db.yaml -f admin.yaml -f app.yaml up -d
+docker compose up -d
 ```
