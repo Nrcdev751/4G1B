@@ -2,3 +2,8 @@ admin.localhost {
     tls internal
     reverse_proxy pgadmin:80
 }
+
+app.localhost {
+    tls internal
+    reverse_proxy s3app:1337
+}
