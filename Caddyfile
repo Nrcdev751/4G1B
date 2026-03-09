@@ -1,0 +1,4 @@
+admin.localhost {
+    tls internal
+    reverse_proxy pgadmin:80
+}

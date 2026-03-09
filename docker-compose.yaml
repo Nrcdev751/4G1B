@@ -17,3 +17,14 @@ services:
       service: s3app
     depends_on:
       - pgadmin
+
+  s3caddy:
+    extends:
+      file: caddy.yaml
+      service: s3caddy
+    depends_on:
+      - pgadmin
+
+volumes:
+  caddy_data:
+  caddy_config:
