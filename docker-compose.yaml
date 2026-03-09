@@ -1,30 +1,4 @@
-services:
-  s3db:
-    extends:
-      file: db.yaml
-      service: s3db
-
-  pgadmin:
-    extends:
-      file: admin.yaml
-      service: pgadmin
-    depends_on:
-      - s3db
-
-  s3app:
-    extends:
-      file: app.yaml
-      service: s3app
-    depends_on:
-      - pgadmin
-
-  s3caddy:
-    extends:
-      file: caddy.yaml
-      service: s3caddy
-    depends_on:
-      - pgadmin
-
-volumes:
-  caddy_data:
-  caddy_config:
+include:
+  - ./db.yaml
+  - ./admin.yaml
+  - ./app.yaml
