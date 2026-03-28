@@ -1,5 +1,5 @@
 services:
-  s3caddy:
+  caddy:
     image: caddy:latest
     container_name: 68-s3-4G1B-caddy
     restart: unless-stopped
@@ -12,6 +12,7 @@ services:
       - caddy_config:/config
     depends_on:
       - pgadmin
+      - s3app
 
 volumes:
   caddy_data:
