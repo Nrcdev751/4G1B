@@ -1,3 +1,9 @@
 # dotenv environment variable files
 .env
 .env.*
+
+# SSH Keys
+68_s3_narongchai
+68_s3_narongchai.pub
+68_s3_prawee
+68_s3_prawee.pub
