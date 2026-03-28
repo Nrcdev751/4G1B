@@ -1,0 +1,11 @@
+# For the pgadmin service
+admin.4g1b.com {
+    tls internal
+    reverse_proxy pgadmin:80
+}
+
+# For the main app service
+4g1b.com {
+    tls internal
+    reverse_proxy s3app:1337
+}
