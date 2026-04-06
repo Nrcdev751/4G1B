@@ -3,3 +3,5 @@ include:
   - ./admin.yaml
   - ./app.yaml
   - ./proxy.yaml
+volumes:
+  s3db:

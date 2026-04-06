@@ -12,6 +12,6 @@ services:
       DATABASE_USERNAME: "${DATABASE_USER}"
       DATABASE_PASSWORD: "${DATABASE_PASS}"
     depends_on:
-      - s3db    
+      - s3db
     ports:
       - "${APPLICATION_PORT}:1337"
